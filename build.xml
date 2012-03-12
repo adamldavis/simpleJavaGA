@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="jar">
+
+	<property name="appname" value="simpleGa"/>
+
+	
+		<!-- ================================= 
+          target: jar              
+         ================================= -->
+    <target name="jar" depends="" description="builds jar">
+        <jar destfile="${appname}.jar">
+        	<fileset dir="bin"></fileset>
+        </jar>
+    </target>
+
+
+</project>
