@@ -2,8 +2,11 @@
 package com.adamldavis.ga;
 
 /**
- * @author Adam Davis
+ * Defines a single generation. Default population size is 100.
  * 
+ * @author Adam Davis
+ * @see Algorithm
+ * @see Individual
  */
 public class Population {
 

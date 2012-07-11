@@ -4,6 +4,23 @@ package com.adamldavis.ga;
 import java.util.Random;
 
 /**
+ * Main class defining the GA algorithm.
+ * 
+ * <p>
+ * Example usage:
+ * 
+ * <pre>
+ * {@code
+ * 		// Create an initial population
+ *  	Individual.setDefaultGeneLength(32);
+ * 		Population myPop = new Population(fitnessCalc, 50, true);
+ * 
+ * 		// Evolve our population until we reach an optimum solution
+ * 		while (myPop.getFittest().getFitness() < fitnessCalc.getMaxFitness()) {
+ * 			myPop = Algorithm.evolvePopulation(myPop);
+ * 		}
+ * </pre>
+ * 
  * @author Adam Davis
  * 
  */

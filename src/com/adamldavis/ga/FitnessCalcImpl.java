@@ -2,6 +2,8 @@
 package com.adamldavis.ga;
 
 /**
+ * Simple FitnessCalculator used for testing.
+ * 
  * @author Adam Davis
  * 
  */
@@ -28,8 +30,11 @@ public class FitnessCalcImpl implements FitnessCalculator {
 		}
 	}
 
-	/* (non-Javadoc)
-	 * @see com.adamldavis.ga.FitnessCalc#getFitness(com.adamldavis.ga.Individual)
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see
+	 * com.adamldavis.ga.FitnessCalc#getFitness(com.adamldavis.ga.Individual)
 	 */
 	@Override
 	public int getFitness(Individual individual) {
@@ -44,7 +49,9 @@ public class FitnessCalcImpl implements FitnessCalculator {
 	}
 
 	// Get optimum fitness
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see com.adamldavis.ga.FitnessCalc#getMaxFitness()
 	 */
 	@Override

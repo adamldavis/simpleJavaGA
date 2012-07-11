@@ -23,6 +23,7 @@ public class GaTest {
 		fitnessCalc.setSolution(solution);
 
 		// Create an initial population
+		Individual.setDefaultGeneLength(64);
 		Population myPop = new Population(fitnessCalc, 50, true);
 
 		// Evolve our population until we reach an optimum solution

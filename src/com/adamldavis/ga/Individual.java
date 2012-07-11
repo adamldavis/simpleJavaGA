@@ -2,6 +2,12 @@ package com.adamldavis.ga;
 
 import java.util.Random;
 
+/**
+ * Represents an individual with genes. Default gene length is 64.
+ * 
+ * @author Adam Davis
+ * 
+ */
 public class Individual {
 
 	static int defaultGeneLength = 64;
