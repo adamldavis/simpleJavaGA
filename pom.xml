@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.adamldavis</groupId>
   <artifactId>simpleJavaGA</artifactId>
-  <version>0.0.2-SNAPSHOT</version>
+  <version>0.0.2</version>
   <name>simpleJavaGA</name>
   <description>simple Java Genetic algorithm.</description>
   <packaging>jar</packaging>
