@@ -73,4 +73,8 @@ public class Individual {
 		}
 		return geneString.toString();
 	}
+
+	public byte[] getGenes() {
+		return genes;
+	}
 }

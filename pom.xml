@@ -2,15 +2,21 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.adamldavis</groupId>
   <artifactId>simpleJavaGA</artifactId>
-  <version>0.0.1</version>
+  <version>0.0.2-SNAPSHOT</version>
   <name>simpleJavaGA</name>
   <description>simple Java Genetic algorithm.</description>
   <packaging>jar</packaging>
   <url>https://github.com/adamd/simpleJavaGA</url>
   <inceptionYear>2012</inceptionYear>
+  <parent>
+    <groupId>org.sonatype.oss</groupId>
+    <artifactId>oss-parent</artifactId>
+    <version>7</version>
+  </parent>
   <scm>
-      <url>https://github.com/adamd/simpleJavaGA</url>
-      <connection>https://github.com/adamd/simpleJavaGA.git</connection>
+    <connection>scm:git:git@github.com:adamd/simpleJavaGA.git</connection>
+    <developerConnection>scm:git:git@github.com:adamd/simpleJavaGA.git</developerConnection>
+    <url>git@github.com:adamd/simpleJavaGA.git</url>
   </scm>
   <licenses>
       <license>
@@ -28,6 +34,7 @@
   </developers>
   <build>
       <sourceDirectory>src</sourceDirectory>
+      <testSourceDirectory>test</testSourceDirectory>
   	<plugins>
   		<plugin>
   			<groupId>org.apache.maven.plugins</groupId>
@@ -55,6 +62,37 @@
   			    </execution>
   			</executions>
   		</plugin>
+  		<plugin>
+  			<groupId>org.apache.maven.plugins</groupId>
+  			<artifactId>maven-gpg-plugin</artifactId>
+  			<version>1.4</version>
+  			<executions>
+	          <execution>
+	            <id>sign-artifacts</id>
+	            <phase>verify</phase>
+	            <goals>
+	              <goal>sign</goal>
+	            </goals>
+	          </execution>
+	        </executions>
+  		</plugin>
+  		<plugin>
+  			<groupId>org.apache.maven.plugins</groupId>
+  			<artifactId>maven-compiler-plugin</artifactId>
+  			<version>2.3.2</version>
+  			<configuration>
+  			    <source>1.6</source>
+  			    <target>1.6</target>
+  			</configuration>
+  		</plugin>
   	</plugins>
   </build>
+  <dependencies>
+  	<dependency>
+  		<groupId>junit</groupId>
+  		<artifactId>junit</artifactId>
+  		<version>4.9</version>
+  		<scope>test</scope>
+  	</dependency>
+  </dependencies>
 </project>
