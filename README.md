@@ -10,6 +10,18 @@ The basic idea is:
 5. Mutation - We need to add a little bit randomness into our populations' genetics otherwise every combination of solutions we can create would be in our initial population.
 6. And repeat! - Now we have our next generation we can start again from step two.
 
+Example Usage
+--------------
+
+Create an initial population, then evolve our population until we reach an optimum solution.
+
+		Individual.setDefaultGeneLength(32);
+		Population myPop = new Population(fitnessCalc, 50, true);
+
+		while (myPop.getFittest().getFitness() < fitnessCalc.getMaxFitness()) {
+			myPop = Algorithm.evolvePopulation(myPop);
+		}
+
 FitnessCalculator
 -----------------
 
