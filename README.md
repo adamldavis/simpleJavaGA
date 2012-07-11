@@ -1,3 +1,4 @@
+[![Build Status](https://secure.travis-ci.org/adamd/simpleJavaGA.png?branch=master)](http://travis-ci.org/adamd/simpleJavaGA)
 Introduction
 ------------
 A genetic algorithm (GA) is great for finding solutions for complex problems. They're used in engineering to design all sorts of products because they're brilliant at finding just the right materials and the right shapes to create stronger, faster and overall better products. They're also used to design computer algorithms, to schedule tasks, and to solve other optimization problems. Genetic algorithms work by mimicking the way life finds solutions to real world problems using the process of evolution. Although genetic algorithms are capable of solving incredibly complicated problems, they are themselves pretty simple to understand. 
