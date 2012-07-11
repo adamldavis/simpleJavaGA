@@ -19,6 +19,7 @@ import java.util.Random;
  * 		while (myPop.getFittest().getFitness() < fitnessCalc.getMaxFitness()) {
  * 			myPop = Algorithm.evolvePopulation(myPop);
  * 		}
+ * }
  * </pre>
  * 
  * @author Adam Davis
